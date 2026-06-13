@@ -1,0 +1,117 @@
+{
+  "inventory": [
+    { "id": "f1", "name": "Red Rose", "stock": 120, "price": 2.50, "supplier": "Green Valley Growers", "minStock": 30 },
+    { "id": "f2", "name": "Pink Rose", "stock": 95, "price": 2.50, "supplier": "Green Valley Growers", "minStock": 30 },
+    { "id": "f3", "name": "White Tulip", "stock": 18, "price": 1.80, "supplier": "Dutch Petals Co.", "minStock": 25 },
+    { "id": "f4", "name": "Yellow Tulip", "stock": 40, "price": 1.80, "supplier": "Dutch Petals Co.", "minStock": 25 },
+    { "id": "f5", "name": "Stargazer Lily", "stock": 35, "price": 4.00, "supplier": "Orchid Oasis Ltd.", "minStock": 15 },
+    { "id": "f6", "name": "Sweet Lavender", "stock": 150, "price": 1.20, "supplier": "Provence Farms", "minStock": 40 },
+    { "id": "f7", "name": "Bright Sunflower", "stock": 12, "price": 3.00, "supplier": "Sunny Slopes Inc.", "minStock": 20 },
+    { "id": "f8", "name": "Blue Hydrangea", "stock": 25, "price": 5.50, "supplier": "Pacific Flora", "minStock": 15 },
+    { "id": "f9", "name": "Pink Carnation", "stock": 80, "price": 1.50, "supplier": "Green Valley Growers", "minStock": 25 }
+  ],
+  "customers": [
+    { "id": "c1", "name": "Eleanor Vance", "email": "eleanor@gmail.com", "phone": "+1-202-555-0143", "loyaltyPoints": 450, "joinedDate": "2025-09-15" },
+    { "id": "c2", "name": "James Sterling", "email": "jsterling@yahoo.com", "phone": "+1-303-555-0189", "loyaltyPoints": 120, "joinedDate": "2026-01-20" },
+    { "id": "c3", "name": "Sophia Martinez", "email": "sophia.m@outlook.com", "phone": "+1-415-555-0122", "loyaltyPoints": 780, "joinedDate": "2025-05-11" },
+    { "id": "c4", "name": "Liam Henderson", "email": "liam.h@gmail.com", "phone": "+1-617-555-0195", "loyaltyPoints": 90, "joinedDate": "2026-03-02" },
+    { "id": "c5", "name": "Clara Dupont", "email": "clara.d@live.com", "phone": "+1-718-555-0156", "loyaltyPoints": 310, "joinedDate": "2025-11-30" }
+  ],
+  "orders": [
+    {
+      "id": "o1001",
+      "customerId": "c1",
+      "customerName": "Eleanor Vance",
+      "items": [
+        { "name": "Red Rose", "qty": 12, "price": 2.50 },
+        { "name": "Sweet Lavender", "qty": 10, "price": 1.20 }
+      ],
+      "customizations": {
+        "size": "Medium",
+        "wrapping": "Rustic Burlap",
+        "greetingCard": "Happy Anniversary, my love! - Arthur"
+      },
+      "total": 42.00,
+      "status": "Delivered",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Stripe",
+      "deliveryPersonnel": "Robert Davis",
+      "deliveryStatus": "Completed",
+      "createdAt": "2026-06-08T14:30:00Z"
+    },
+    {
+      "id": "o1002",
+      "customerId": "c3",
+      "customerName": "Sophia Martinez",
+      "items": [
+        { "name": "Blue Hydrangea", "qty": 3, "price": 5.50 },
+        { "name": "White Tulip", "qty": 10, "price": 1.80 }
+      ],
+      "customizations": {
+        "size": "Large",
+        "wrapping": "Elegant Pink Crepe",
+        "greetingCard": "Hope this brightens your week! Love, Sophia"
+      },
+      "total": 34.50,
+      "status": "In Transit",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Razorpay",
+      "deliveryPersonnel": "Sarah Jenkins",
+      "deliveryStatus": "Out for Delivery",
+      "createdAt": "2026-06-11T08:15:00Z"
+    },
+    {
+      "id": "o1003",
+      "customerId": "c2",
+      "customerName": "James Sterling",
+      "items": [
+        { "name": "Bright Sunflower", "qty": 5, "price": 3.00 },
+        { "name": "Yellow Tulip", "qty": 5, "price": 1.80 }
+      ],
+      "customizations": {
+        "size": "Small",
+        "wrapping": "Classic Kraft Paper",
+        "greetingCard": "Happy Birthday, Dad!"
+      },
+      "total": 24.00,
+      "status": "Processing",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Stripe",
+      "deliveryPersonnel": "Pending",
+      "deliveryStatus": "Pending",
+      "createdAt": "2026-06-11T10:00:00Z"
+    },
+    {
+      "id": "o1004",
+      "customerId": "c5",
+      "customerName": "Clara Dupont",
+      "items": [
+        { "name": "Stargazer Lily", "qty": 5, "price": 4.00 },
+        { "name": "Pink Carnation", "qty": 10, "price": 1.50 }
+      ],
+      "customizations": {
+        "size": "Medium",
+        "wrapping": "Soft White Mesh",
+        "greetingCard": "Thank you for being a wonderful mentor."
+      },
+      "total": 35.00,
+      "status": "Pending",
+      "paymentStatus": "Pending",
+      "paymentMethod": "Razorpay",
+      "deliveryPersonnel": "Pending",
+      "deliveryStatus": "Pending",
+      "createdAt": "2026-06-11T11:10:00Z"
+    }
+  ],
+  "reviews": [
+    { "id": "r1", "customerName": "Eleanor Vance", "rating": 5, "comment": "The anniversary bouquet was absolutely breath-taking! Fresh and arrived right on time.", "date": "2026-06-08" },
+    { "id": "r2", "customerName": "Marcus Aurelius", "rating": 4, "comment": "Great selection of custom flowers, though the yellow tulips ran out of stock. Overall good experience.", "date": "2026-06-09" },
+    { "id": "r3", "customerName": "Sophia Martinez", "rating": 5, "comment": "Exceptional customer support! The bridal setup was exactly as envisioned.", "date": "2026-06-10" }
+  ],
+  "payments": [
+    { "id": "p_stripe_01", "orderId": "o1001", "amount": 42.00, "status": "Succeeded", "method": "Stripe", "date": "2026-06-08T14:31:00Z" },
+    { "id": "p_razor_02", "orderId": "o1002", "amount": 34.50, "status": "Succeeded", "method": "Razorpay", "date": "2026-06-11T08:16:00Z" },
+    { "id": "p_stripe_03", "orderId": "o1003", "amount": 24.00, "status": "Succeeded", "method": "Stripe", "date": "2026-06-11T10:01:00Z" },
+    { "id": "p_razor_04", "orderId": "o1004", "amount": 35.00, "status": "Pending", "method": "Razorpay", "date": "2026-06-11T11:10:00Z" }
+  ]
+}
